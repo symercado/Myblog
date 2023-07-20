@@ -1,38 +1,213 @@
 <html>
 
-<head>
-	<title>Sir Tim Berners-Lee</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-</head>
+    <p>
+       Cómo declarar arrays 
+        <h4 id="declarar_arrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo obtener el primer elemento del array
+        <h4 id="acceder_primer_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+       Cómo obtener el segundo elemento del array
+        <h4 id="acceder_segundo_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo obtener el tercer elemento del array
+        <h4 id="acceder_tercer_elemento"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+       Cómo obtener la longitud del array
+        <h4 id="ver_longitud_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo crear un bucle del array
+        <h4 id="bucle_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir un elemento al final de un array
+        <h4 id="añadir_elemento_al_final_de_un_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir más elementos al final de un array
+        <h4 id="añadir_más_elementos_al_final_de_un_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo declarar arrays con el alfabeto 
+        <h4 id="ver_array_alfabeto"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo ordenar los arrays del alfabeto 
+        <h4 id="ver_array_alfabeto_ordenado"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo invertir los arrays del alfabeto 
+        <h4 id="ver_array_invertido"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        cómo declarar arrays con números 
+        <h4 id="ver_array_num"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo encontrar el número de máximo valor en el array 
+        <h4 id="ver_num_max"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo encontrar el número de mínimo valor en el array 
+        <h4 id="ver_num_min"> 
+        </h4>
+    </p>
 
-<body>
+    <h3 style="background-color: red; font-size: 23px;">
+        ACTIVIDAD ADICIONAL
+    </h3>
+    <p>
+        Cómo añadir un elemento al inicio de un array
+        <h4 id="añadir_elemento_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo añadir más elementos al inicio de un array
+        <h4 id="añadir_más_elementos_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo remover un elemento al inicio de un array
+        <h4 id="remover_elemento_al_inicio_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo remover un elemento al final de un array
+        <h4 id="remover_elemento_al_final_del_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        Cómo unir dos arrays
+        <h4 id="unir_dos_arrays"> 
+        </h4>
+    </p>
 
-	<ul class="menú">
-        <li class="enlaces">INICIO</li>
-        <li class="enlaces">VIDEOS</li>
-        <li class="enlaces">TRABAJO</li>
-        <li class="enlaces">ESCRITOS</li>
-        <li class="enlaces">CONTACTO</li>
-    </ul>
 
-	<section id="bienvenida" class="parallax-container">
-		<div class="parallax-inner">
-			<img src="stbl.jpg" class="perfil" />
-			<h1>Soy <br><span id="nombre">Tim Berners-Lee</span></h1>
-			<h2> Soy el fundador de www: World Wide Web</h2>
-		</div>
-	</section>
-	
-	<section id="bio">
-		<h1>¡Hola!</h1>
-		<div class="línea"></div>
-		<p>Sir Tim Berners-Lee inventó la World Wide Web en 1989.
- Sir Tim es el Director del Consorcio WWW (W3C), una organización de estándares de la Web fundada en 1994 la cual desarrolla tecnlogías interoperables (especificaciones, lineamientos, software, y herramientas) para liderar la Web hacia todo su potencial. Él es un Director de la Fundación World Wide Web que fue lanzada en 2009 para coordinar esfuerzos para avanzar el potencial de la Web en beneficio de la humanidad.
-<br /><br />En 2001 se convirtió en Compañero de la Sociedad Real. Ha sido el recipiente de varios premios internacionales incluyendo el Premio Japonés, Premio Príncipe de Asturias, Premio de Tecnología del Milenio, y el premio alemán Die Quadriga. En 2004, fue nombrado caballero por la Reina Elizabeth y, en 2007, fue galardonado con la Órden del Mérito. En 2009, fue elejido como asociado extranjero de la Academia Nacional de Ciencias (Estados Unidos).
-</p>
-	</section>
+<script>
 
-</body>
+    //Cómo declarar un array. El id para referirnos al innerHTML es declarar_arrays
+    var frutas = ["Manzana", "Pera",  "Uva"];
+    console.log(frutas);
+    document.getElementById("declarar_arrays").innerHTML= frutas;
+    
+    //Cómo obtener el primer elemento de un array. El id para referirnos al innerHTML es acceder_primer_elemento
+    var primera_fruta = frutas[0];
+    console.log(primera_fruta);
+    document.getElementById("acceder_primer_elemento").innerHTML= primera_fruta;
+  
+    //Cómo obtener el segundo elemento de un array. El id para referirnos al innerHTML es acceder_segundo_elemento
+    var segunda_fruta = frutas[1];
+    console.log(segunda_fruta);
+    document.getElementById("acceder_segundo_elemento").innerHTML = segunda_fruta;
 
+    //Cómo obtener el tercer elemento de un array. El id para referirnos al innerHTML es acceder_tercer_elemento
+    var tercera_fruta = frutas[2];
+    console.log(tercera_fruta);
+    document.getElementById("acceder_tercer_elemento").innerHTML = tercera_fruta;
+  
+    //Cómo obtener la longitud del array. El id para referirnos al innerHTML es 
+    var longitud_array = frutas.length;ver_longitud_del_array
+    console.log(tercera_fruta);
+    document.getElementById("ver_longitud_del_array").innerHTML = longitud_array;
+
+    //Cómo crear un bucle del array. El id para referirnos al innerHTML es bucle_del_array
+    var valor_array ="" 
+    for (i=0; i<frutas.length; i++) {
+    console.log(frutas[i]);
+    valor_array = valor_array + frutas[i] + "<br>";
+    }
+    document.getElementById("bucle_del_array").innerHTML = valor_array;
+   
+    //Añadir un elemento al final de un array con el método push
+    frutas.push("Naranja");
+    console.log(tfrutas);
+    document.getElementById("añadir_elemento_al_final_de_un_array").innerHTML = frutas;
+
+    //Cómo añadir un elemento al final de un array. El id para referirnos al innerHTML es añadir_elemento_al_final_de_un_array
+   
+    //Cómo añadir más elementos al final de un array. El id para referirnos al innerHTML es añadir_más_elementos_al_final_de_un_array
+  
+    //Cómo declarar un array con el alfabeto. El id para referirnos al innerHTML es ver_array_alfabeto
+    var letras = ["e", "c", "a", "d", "b"];
+    console.log(letras);
+    document.getElementById("ver_array_alfabeto").innerHTML = letras;
+  
+    //Cómo ordenar el array del alfabeto. El id para referirnos al innerHTML es ver_array_alfabeto_ordenado
+    letras.sort();
+    console.log(letras);
+    document.getElementById("ver_array_alfabeto_ordenado").innerHTML = letras;
+    
+    //Cómo invertir el array. El id para referirnos al innerHTML es ver_array_invertido
+    letras.reverse();
+    console.log(letras);
+    document.getElementById("ver_array_invertido").innerHTML = letras;
+    
+   
+    //Cómo declarar un array con números. El id para referirnos al innerHTML es ver_array_num
+    var numeros = ["1", "43", "82", "0"];
+    console.log(numeros);
+    document.getElementById("ver_array_num").innerHTML = numeros;
+
+    //Cómo declarar un número con valor máximo del array con números. El id para referirnos al innerHTML es ver_num_max
+    var num_max = Math.max.apply(Math, numeros);
+    console.log(num_max);
+    document.getElementById("ver_num_max").innerHTML = numeros;
+  
+    //Cómo encontrar el número con valor mínimo del array con números. El id para referirnos al innerHTML es ver_num_min
+    var num_min = Math.min.apply(Math, numeros);
+    console.log(num_min);
+    document.getElementById("ver_num_min").innerHTML = numeros;
+    console.log("ACTIVIDAD ADICIONAL");
+
+    //Añadir un elemento al inicio de un array con el método unshift
+    //Cómo añadir un elemento al inicio de un array. El id para referirnos al innerHTML es añadir_elemento_al_inicio_del_array
+  
+    //How to more elements at the start of the array ? El id para referirnos al innerHTML es añadir_más_elementos_al_inicio_del_array
+   
+    //Cómo remover un elemento al inicio de un array. El id para referirnos al innerHTML es remover_elemento_al_inicio_del_array
+    
+    //Cómo remover un elemento al final de un array. El id para referirnos al innerHTML es remover_elemento_al_final_del_array
+    
+    //Cómo declarar un array con países del primer mundo 
+    
+    //Cómo declarar un array con países del primer mundo 
+    
+    //Cómo unir dos arrays. El id para referirnos al innerHTML es unir_dos_arrays
+    
+</script>
 </html>
